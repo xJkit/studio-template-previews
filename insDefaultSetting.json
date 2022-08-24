@@ -1,7 +1,7 @@
 {
   "data-width": "375",
   "data-height": "208",
-  "data-preview-url": "template-a.html",
+  "data-preview-url": "boomerang.html",
   "data-entry-animate": {
     "type": "fall",
     "width": "640",
@@ -15,14 +15,5 @@
   "data-close-button-position": "leftTop",
   "data-appier-click-url": "https://www.google.com/?redirect=",
   "data-arm-beacon": "https://www.google.com/?arm=",
-  "data-use-product-image": true,
-  "data-url-1": "https://www.appier.com/url1",
-  "data-url-2": "https://www.appier.com/url2",
-  "data-url-3": "https://www.appier.com/url3",
-  "data-url-4": "https://www.appier.com/url4",
-  "data-url-5": "https://www.appier.com/url5",
-  "data-url-6": "https://www.appier.com/url6",
-  "data-url-7": "https://www.appier.com/url7",
-  "data-expanded-banner": "4",
   "data-has-video": true
 }

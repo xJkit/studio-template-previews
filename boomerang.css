@@ -51,9 +51,9 @@
     height: 100%;
   }
 }
-/*!****************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/templates/bottom-plus/template-a/index.scss ***!
-  \****************************************************************************************************************************************************************************************************************/
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/templates/bottom-plus/boomerang/index.scss ***!
+  \***************************************************************************************************************************************************************************************************************/
 * {
   padding: 0;
   margin: 0;
@@ -161,15 +161,23 @@ img {
   transform: scale(1.3);
   transform-origin: top;
 }
+.slot__banner video,
+.slot__banner canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .slot__banner img {
   transform-origin: left top;
 }
 .slot__video {
   display: block;
   position: absolute;
-  top: 12px;
+  top: 24px;
   right: 0;
-  width: 53.3333%;
+  width: 66.6666%;
   z-index: 2;
   opacity: 0;
 }
@@ -178,10 +186,6 @@ img {
   width: 100%;
   display: block;
   padding-bottom: 56.25%;
-}
-.slot__video > div {
-  width: 100%;
-  height: 100%;
 }
 .slot__video video,
 .slot__video canvas {
@@ -213,119 +217,6 @@ img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
-}
-
-.expand {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 12;
-}
-.expand .volume {
-  bottom: 4px;
-}
-.expand__wrapper {
-  position: relative;
-  width: 85.333334%;
-}
-@media screen and (orientation: landscape) and (max-height: 960px) {
-  .expand__wrapper {
-    transform: scale(0.4) !important;
-  }
-}
-.expand .slot__product img {
-  height: auto !important;
-}
-.expand__fake {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.expand__fake[data-direction=next] {
-  position: absolute;
-  left: 50%;
-  z-index: 3;
-}
-.expand__fake[data-direction=prev] {
-  position: absolute;
-  left: -50%;
-  z-index: 3;
-}
-.expand__banner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: scale(0.9);
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.2s;
-}
-.expand__banner[data-position=active] {
-  transform: scale(1);
-  position: relative;
-  left: 0;
-  z-index: 4;
-}
-.expand__banner[data-position=next] {
-  position: absolute;
-  left: 50%;
-  z-index: 2;
-}
-.expand__banner[data-position=prev] {
-  position: absolute;
-  left: -50%;
-  z-index: 2;
-}
-.expand__banner img {
-  width: 100%;
-}
-.expand__video {
-  display: block;
-  position: absolute;
-  z-index: 1;
-  top: 10px;
-  left: 10px;
-  width: calc(100% - 20px);
-}
-.expand__video::before {
-  content: "";
-  width: 100%;
-  display: block;
-  padding-bottom: 56.25%;
-}
-.expand__video video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.expand__withdraw {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
-  border-radius: 4px;
-  background-image: url(./assets/withdraw.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 10;
-  transform-origin: right top;
 }
 
 .volume {
