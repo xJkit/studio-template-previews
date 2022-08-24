@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+  <style>
+    .bg-primary {
+      background-color: #17369A !important;
+    }
+
+    .content.date {
+      color: #17369A;
+      height: 40px;
+    }
+
+    .container.content {
+      padding: 20px;
+      height: 3000px;
+      background-image: url(background_light.png);
+      background-size: 100% auto;
+      background-repeat: repeat-y;
+      background-position: center top;
+    }
+
+    .article-section {
+      padding-top: 80px;
+    }
+
+    p {
+      text-align: justify;
+      text-justify: inter-ideograph;
+      font-family: 'Source Sans Pro', 'Microsoft JhengHei' !important;
+      line-height: 28px;
+      ;
+    }
+
+    h1 {
+      padding-bottom: 20px;
+    }
+
+    footer {
+      width: 100%;
+      height: 120px;
+    }
+
+    .footer>p>a,
+    .footer>p>span,
+    .footer>p {
+      color: #FFFFFF !important;
+      padding-top: 20px;
+    }
+  </style>
+  <title>人工智慧, 跨境電商, 數位行銷</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-primary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://www.appier.com/">
+        <img src="https://ad.appier.net/lRD_sfs2b/icon/Appier Logo White and small size.png" alt="" width="83"
+          height="35" class="d-inline-block align-text-top">
+      </a>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="article-section">
+      <div class="ad">
+        <div class="container content"></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+
+    <!-- footer -->
+    <div class="footer" style="margin: 0 -12px;">
+      <footer class="bg-primary">
+        <!-- <span>© 2021 Appier Inc. All Rights Reserved.</span> -->
+        <div class="elementor-text-editor footer">
+          <p class="text-center"><a href="https://www.appier.com/zh-hant/privacy-policy/">隱私條款</a>　
+            <span>|</span>　<a href="https://www.appier.com/zh-hant/cookie-policy/">COOKIE POLICY</a>
+          </p>
+          <p class="text-center">© 2022 Appier Inc. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const type = urlParams.get('type');
+      const typeMapping = {
+        none: "{'type': 'none'}",
+        fall: "{'type': 'fall'}",
+        combo: "{'type': 'combo', 'banner': [{'imgSrc': 'content_01.png'},{'imgSrc': 'content_02.png'},{'imgSrc': 'content_03.png'}]}",
+        beat: "{'type': 'beat'}",
+        customized: "{'type': 'customized'}",
+        blow: "{'type': 'blow', 'banner': [{'imgSrc': 'content_blow_01.png'},{'imgSrc': 'content_blow_02.png'}]}",
+        brakes: "{'type': 'brakes', 'banner': [{'imgSrc': 'content_brakes_01.png'},{'imgSrc': 'content_brakes_02.png'}]}",
+      };
+      document.write(`
+          <ins data-entry-animate="${typeMapping[type]}">
+            <script src="./ad.js" type="text/javascript"><\/script>
+          </ins>
+          <div id="question_mark" style="display:block;width:31px;height:15px;position:absolute;right:1px;top:1px;z-index:1000;"> <style>body{margin: 0;}.icon{width: 15px; height: 15px; float: left; cursor: pointer;}#info{margin-right: 1px; background-repeat: no-repeat, no-repeat; background-image: url(https://ad.appier.net/4QGDNtuHG/icon/Info.svg), url(https://ad.appier.net/4QGDNtuHG/icon/Info_hover_focus.svg) ;}#info:hover, #info:focus, #info:active{background-position-y: -15px, 0;}#close{background-repeat: no-repeat, no-repeat; background-image: url(https://ad.appier.net/4QGDNtuHG/icon/Close.svg), url(https://ad.appier.net/4QGDNtuHG/icon/Close_hover_focus.svg);}#close:hover, #close:focus, #close:active{background-position-y: -15px, 0;}</style> <div id="info" class="icon"></div><div id="close" class="icon"></div></div>
+        `);
+    </script>
+</body>
+
+</html>

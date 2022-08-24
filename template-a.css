@@ -1,0 +1,359 @@
+/*!***************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/common/EntryAnimate/index.scss ***!
+  \***************************************************************************************************************************************************************************************************/
+.entryAnimate {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.entryAnimate__container {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.entryAnimate__container--multiple {
+  display: flex;
+  flex-direction: column;
+}
+.entryAnimate__container::before {
+  content: "";
+  padding-bottom: 150%;
+  display: block;
+}
+.entryAnimate__items {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.entryAnimate__items > * {
+  opacity: 0;
+}
+.entryAnimate img {
+  max-width: 100%;
+  height: auto;
+  opacity: 0;
+}
+@media screen and (orientation: landscape) {
+  .entryAnimate img {
+    width: auto;
+    height: 100%;
+  }
+}
+/*!****************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/templates/bottom-plus/template-a/index.scss ***!
+  \****************************************************************************************************************************************************************************************************************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slot {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, 100%);
+  transform-origin: bottom;
+}
+.slot__wenhao {
+  position: absolute;
+  top: 2.5px;
+  right: 2.5px;
+  width: 10px;
+  height: 10px;
+  z-index: 1;
+}
+.slot__wenhao img {
+  display: block;
+  width: 100%;
+}
+.slot__close {
+  position: absolute;
+  transform-origin: left top;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+.slot__close[data-position=leftTop] {
+  top: 2px;
+  left: 2px;
+}
+.slot__close[data-position=rightTop] {
+  top: 2px;
+  right: 2px;
+}
+.slot__close img {
+  max-width: 100%;
+}
+.slot__general {
+  width: 26px;
+  height: 20px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.slot__general::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: inherit;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 4px 4px 0px 0px;
+  background-image: url(./assets/expanded-general.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.slot__general img {
+  width: auto;
+  height: 100%;
+}
+.slot__container {
+  width: 100%;
+  height: calc(100% - 20px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.slot__banner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: scale(1.3);
+  transform-origin: top;
+}
+.slot__banner img {
+  transform-origin: left top;
+}
+.slot__video {
+  display: block;
+  position: absolute;
+  top: 12px;
+  right: 0;
+  width: 53.3333%;
+  z-index: 2;
+  opacity: 0;
+}
+.slot__video::before {
+  content: "";
+  width: 100%;
+  display: block;
+  padding-bottom: 56.25%;
+}
+.slot__video > div {
+  width: 100%;
+  height: 100%;
+}
+.slot__video video,
+.slot__video canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.slot__products {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 83px;
+  display: flex;
+  align-items: stretch;
+  z-index: 3;
+  pointer-events: none;
+}
+.slot__product {
+  pointer-events: auto;
+  flex: 1;
+  transform: translateY(0px);
+  width: 33.3333333333%;
+}
+.slot__product img {
+  transform-origin: top;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.expand {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 12;
+}
+.expand .volume {
+  bottom: 4px;
+}
+.expand__wrapper {
+  position: relative;
+  width: 85.333334%;
+}
+@media screen and (orientation: landscape) and (max-height: 960px) {
+  .expand__wrapper {
+    transform: scale(0.4) !important;
+  }
+}
+.expand .slot__product img {
+  height: auto !important;
+}
+.expand__fake {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.expand__fake[data-direction=next] {
+  position: absolute;
+  left: 50%;
+  z-index: 3;
+}
+.expand__fake[data-direction=prev] {
+  position: absolute;
+  left: -50%;
+  z-index: 3;
+}
+.expand__banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.9);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+.expand__banner[data-position=active] {
+  transform: scale(1);
+  position: relative;
+  left: 0;
+  z-index: 4;
+}
+.expand__banner[data-position=next] {
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+}
+.expand__banner[data-position=prev] {
+  position: absolute;
+  left: -50%;
+  z-index: 2;
+}
+.expand__banner img {
+  width: 100%;
+}
+.expand__video {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 10px;
+  width: calc(100% - 20px);
+}
+.expand__video::before {
+  content: "";
+  width: 100%;
+  display: block;
+  padding-bottom: 56.25%;
+}
+.expand__video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.expand__withdraw {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  background-image: url(./assets/withdraw.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 10;
+  transform-origin: right top;
+}
+
+.volume {
+  cursor: pointer;
+  position: absolute;
+  right: 4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  z-index: 10;
+  transform-origin: right bottom;
+}
+.volume::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+.volume[data-sound=off]::after {
+  background-image: url(./assets/sound-off.png);
+}
+.volume[data-sound=on]::after {
+  background-image: url(./assets/sound-on.png);
+  background-color: white;
+}
