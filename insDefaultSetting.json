@@ -1,11 +1,12 @@
 {
   "data-width": "375",
   "data-height": "208",
-  "data-preview-url": "boomerang.html",
+  "data-preview-url": "switch-blow-brakes.html",
   "data-entry-animate": {
     "type": "fall",
     "width": "640",
     "height": "960",
+    "duration": "3",
     "banner": [
       {
         "imgSrc": "content.png"
@@ -15,5 +16,9 @@
   "data-close-button-position": "leftTop",
   "data-appier-click-url": "https://www.google.com/?redirect=",
   "data-arm-beacon": "https://www.google.com/?arm=",
-  "data-has-video": true
+  "data-has-video": true,
+  "data-product-amount": 3,
+  "data-url-1": "https://www.appier.com/url1",
+  "data-url-2": "https://www.appier.com/url2",
+  "data-url-3": "https://www.appier.com/url3"
 }
