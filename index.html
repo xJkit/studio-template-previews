@@ -45,7 +45,7 @@
 <body>
   <script>
     ['none', 'fall', 'combo', 'beat', 'customized', 'blow', 'brakes'].forEach(type => {
-      const link = `./preview.html?type=${type}&href=${window.location.href}`;
+      const link = `./preview.html?type=${type}&href=${window.location.origin}${window.location.pathname}`;
       document.write(`
           <div class="preview">
             <div class="type"><a href="${link}" target="_blank">${type}</a></div>
